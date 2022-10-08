@@ -1,0 +1,14 @@
+@mixin container(){
+    max-width: 1120px;
+    margin: 0 auto;
+}
+@mixin displayFlex {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+@mixin widthHeight( $width , $height){
+    width: $width;
+    height: $height;
+}

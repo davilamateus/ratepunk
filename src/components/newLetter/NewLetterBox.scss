@@ -1,0 +1,68 @@
+@import './../../styles/colors';
+.newLetterBox-box{
+    width: 544px;
+    height: 797px;
+    background-color: $primaryColor;
+    margin: 64px 0px;
+    border: 1px solid $quaternaryColor;
+    border-radius: 16px;
+    padding: 64px;
+}
+
+.newLetterBox-title{
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: $quinaryColor;
+    font: normal 48px/72px 'Caveat Brush';
+}
+
+.newLetterBox-paragrath{
+    padding: 32px 0px;
+    color: $quinaryColor;
+    letter-spacing: 0px;
+    font: normal normal normal 20px/32px Noto Sans;
+}
+
+.inputEmail{
+    background-color: $whiteColor;
+    border: 1px solid $quaternaryColor;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 64px;
+    display: flex;
+    padding-left:20px;
+    margin: 15px 0px;
+}
+.inputEmail img{
+    width: 20px;
+    margin: 0;
+}
+.inputEmail input{
+    width: 360px;
+    margin-left: 20px;
+    border: none;
+}
+.inputEmail input:focus
+ {
+    outline: none;
+}
+
+.newLetterBox-btn{
+    background-color: $secundaryColor;
+    font: normal normal bold 20px/32px Noto Sans;
+    text-align: center;
+    width: 416px;
+    height: 64px;
+    border: 1px solid $quaternaryColor;
+    color: $whiteColor;
+    border-radius: 8px;
+
+}
+
+.limitsMenssage p{
+    font: normal normal normal 16px/32px Noto Sans;
+    color: $senaryColor;
+    bottom: 0;
+    position: absolute;
+
+}

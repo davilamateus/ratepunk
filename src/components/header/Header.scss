@@ -1,0 +1,39 @@
+
+@import  './../../styles/colors';
+@import './../../styles//mixins';
+
+.header-container{
+    @include container;
+    @include displayFlex;
+    height: 80px;
+
+}
+
+
+.menu {
+    ul{
+        display: flex;
+
+    }
+
+    ul li {
+        list-style: none;
+    }
+  
+    ul li a{
+        text-decoration: none;
+        color: $quaternaryColor;
+        margin: 0 27px;
+        font-weight: normal;
+
+    }
+    }
+
+.menuActive{
+    a{
+        color: $secundaryColor!important;
+    }
+
+}
+
+

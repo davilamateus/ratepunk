@@ -1,0 +1,15 @@
+@import './../../styles/colors';
+@import './../../styles/mixins';
+
+
+.new-letter-div{
+    width: 100%;
+    height: 925px;
+    background-color: $tertiaryColor;
+    border: 1px solid $quinaryColor;
+}
+.new-letter-container{
+    @include container;
+    @include displayFlex;
+}
+    

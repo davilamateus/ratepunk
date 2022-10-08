@@ -1,0 +1,40 @@
+@import './../../styles/colors';
+@import './../../styles/mixins';
+
+
+
+
+
+
+.steps-item{
+    @include displayFlex;
+}
+.step-text{
+    width: 256px;
+    h4{
+        color: $secundaryColor;
+        font: normal normal bold 20px/32px Noto Sans;
+        text-transform: uppercase;
+    }
+    h2{
+        font: normal normal normal 32px/48px Caveat Brush;
+        text-transform: uppercase;
+        margin: 16px 0px;
+    }
+    p{
+        font: normal normal normal 20px/32px Noto Sans;
+
+    }
+}
+.step-img{
+    @include widthHeight(128px,auto);
+    margin-right:56px;
+}
+.collect-coins-img {
+    margin: 48px 0px;
+    img {
+        @include widthHeight(144px,auto);
+        margin-right:0px;
+
+    }
+}

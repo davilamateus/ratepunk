@@ -1,0 +1,37 @@
+.steps-item {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.step-text {
+  width: 256px;
+}
+.step-text h4 {
+  color: #4EB3E3;
+  font: normal normal bold 20px/32px Noto Sans;
+  text-transform: uppercase;
+}
+.step-text h2 {
+  font: normal normal normal 32px/48px Caveat Brush;
+  text-transform: uppercase;
+  margin: 16px 0px;
+}
+.step-text p {
+  font: normal normal normal 20px/32px Noto Sans;
+}
+
+.step-img {
+  width: 128px;
+  height: auto;
+  margin-right: 56px;
+}
+
+.collect-coins-img {
+  margin: 48px 0px;
+}
+.collect-coins-img img {
+  width: 144px;
+  height: auto;
+  margin-right: 0px;
+}/*# sourceMappingURL=steps.css.map */
