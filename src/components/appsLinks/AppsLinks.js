@@ -8,7 +8,7 @@ const AppsLinks = () => {
             <div className="apps-links-stores">
                 <a href='https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk'>
                     <button className="app-links-button">
-                        <img src="assets/chrome.svg" alt="Logo Chrome" />
+                        <img src="./assets/chrome.svg" alt="Logo Chrome" />
                         <div className="app-link-button-text">
                             <p>available in the</p>
                             <p className="app-link-name-store">chrome web store</p>
@@ -17,7 +17,7 @@ const AppsLinks = () => {
                 </a>
                 <a href='https://apps.apple.com/app/ratepunk/id1607823726'>
                     <button className="app-links-button">
-                        <img src="assets/apple.svg" alt="" />
+                        <img src="./assets/apple.svg" alt="" />
                         <div className="app-link-button-text">
                             <p>available in the</p>
                             <p className="app-link-name-store">apple app store</p>

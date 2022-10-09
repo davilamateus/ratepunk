@@ -46,9 +46,9 @@ const Header = () => {
                     </div>
                 <div onClick={()=>{menuAction()}} className="menuHamburguer">
                     {menuOpened == false? 
-                    <img src="/assets/menu.svg" alt="Menu" />
+                    <img src="./assets/menu.svg" alt="Menu" />
                     : 
-                    <img src="/assets/close.svg" alt="Menu" />
+                    <img src="./assets/close.svg" alt="Menu" />
                     }
                 </div>
             </div>

@@ -17,7 +17,7 @@ const Footer = () => {
     <div className='footer-div'>
         <div className='footer-container'>
             <div className="footer-about">
-                <img src="assets/logo.svg" alt="Ratepunk Logo" />
+                <img src="./assets/logo.svg" alt="Ratepunk Logo" />
                 <p className="footer-about-text">
                 Ratepunk compares hotel room prices across the major online travel agencies. When you search for a room, Ratepunk extension scans the top booking sites and runs a price comparison, so you can be confident in knowing you’re getting the best deal!
                 </p>
@@ -57,19 +57,19 @@ const Footer = () => {
                      <h3>SOCIAL</h3>
                      <div>
                             <a href="https://www.instagram.com/ratepunk/">
-                                <img src="assets/instagram.svg" alt="Instagram icon" />
+                                <img src="./assets/instagram.svg" alt="Instagram icon" />
                             </a>
                             <a href="https://www.facebook.com/r8punk/">
-                                <img src="assets/facebook.svg" alt="Facebook icon" />
+                                <img src="./assets/facebook.svg" alt="Facebook icon" />
                             </a>
                             <a href="https://www.linkedin.com/company/ratepunk/">
-                                <img src="assets/linkedin.svg" alt="Linkedin icon" />
+                                <img src="./assets/linkedin.svg" alt="Linkedin icon" />
                             </a>
                             <a href="https://mobile.twitter.com/rate_punk">
-                                 <img src="assets/twitter.svg" alt="Twitter icon" />
+                                 <img src="./assets/twitter.svg" alt="Twitter icon" />
                             </a>
                             <a href="https://www.tiktok.com/@ratepunk">
-                                <img src="assets/tiktok.svg" alt="Tiktok icon" />
+                                <img src="./assets/tiktok.svg" alt="Tiktok icon" />
                             </a>
                      </div>
 

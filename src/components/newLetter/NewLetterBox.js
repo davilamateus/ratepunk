@@ -30,7 +30,6 @@ const NewLetterBox = () => {
       
       req.onreadystatechange = () => {
         if (req.readyState == XMLHttpRequest.DONE) {
-          console.log(req.responseText);
           setCopyReferral(`https://ratepunk.com/referral/${Math.random().toString(16).substr(2)}`);
           setStage(2)
         }
@@ -46,16 +45,13 @@ const NewLetterBox = () => {
 
   }
 
-  const [copySuccess, setCopySuccess] = useState('');
   const textAreaRef = useRef(null);
 
   function copyText(e) {
     textAreaRef.current.select();
     document.execCommand('copy');
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
+
     e.target.focus();
-    setCopySuccess('Copied!');
   };
 
 
@@ -68,7 +64,7 @@ const NewLetterBox = () => {
             <form onSubmit={(e)=>{getReferralLInk(e)}}>
               <div className="newLetterBox-inputMenssagers"> {errorEmail}</div>
               <div className="inputEmail">
-                  <img src="/assets/email.svg" alt="Email Icon" />
+                  <img src="./assets/email.svg" alt="Email Icon" />
                   <input type="text" onChange={(e)=>{
                     setEmailInput(e.target.value)
                     setErrorEmail('')
@@ -80,7 +76,7 @@ const NewLetterBox = () => {
         : 
         <>
           <div className="message-success">
-            <img src="assets/success.svg" alt="Success icon" />
+            <img src="./assets/success.svg" alt="Success icon" />
             <p>Your email is confirmed!</p>
           </div>
           <div className="copy-referral">
