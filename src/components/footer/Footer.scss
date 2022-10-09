@@ -4,6 +4,10 @@
 .footer-div{
     background-color: $octonaryColor;
 }
+.copyrightMobile{
+    display: none;
+}
+
 
 .footer-container{
     padding-top: 64px;
@@ -88,4 +92,45 @@
 
         }
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .copyright{
+        display:none;
+    }
+    .copyrightMobile{
+        display: flex;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 48px 32px;
+        div{
+            margin-bottom: 32px;
+            
+        }
+        h3{
+            font: normal normal bold 16px/24px Noto Sans;
+        }
+
+
+    }
+    .footer-contact{
+        padding: 0;
+        min-height: auto;
+        div{
+            div{
+
+                margin-top: 23px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .copyrightMobile{
+        font: normal normal normal 16px/24px Noto Sans;
+        color: $senaryColor;
+
+    }
+    
+  
+       
 }

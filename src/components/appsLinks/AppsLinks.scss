@@ -7,7 +7,7 @@
     border: 1px solid $quinaryColor;
 }
 .app-links-container{
-    height: 144px;
+    min-height: 144px;
     @include container;
     @include displayFlex;
     justify-content: start;
@@ -46,4 +46,39 @@
     div{
         margin: 0 16px;
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .app-links-container{
+        flex-direction: column;
+    }
+    .apps-links-stores{
+        flex-direction: column;
+        button{
+            margin-bottom: 16px;
+            div{
+                p{
+                    font: normal normal normal 16px/16px Noto Sans;
+                    margin-bottom: 2px;
+                }
+                .app-link-name-store{
+                    font: normal normal bold 20px/16px Noto Sans;
+                }
+            }
+        }
+    }
+    .app-links-stars{
+        justify-content: center;
+        div {
+            svg{
+                width: 16px;;
+            }
+
+        }
+        p{
+            font: normal normal normal 16px/24px Noto Sans;
+            margin: 0;
+        }
+    }
+
 }

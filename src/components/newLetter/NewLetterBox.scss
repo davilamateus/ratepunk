@@ -1,13 +1,19 @@
 @import './../../styles/colors';
 @import './../../styles/mixins';
 .newLetterBox-box{
-    width: 544px;
-    height: 797px;
+    width: 100%;
+    max-width: 544px;
     background-color: $primaryColor;
     margin: 64px 0px;
     border: 1px solid $quaternaryColor;
     border-radius: 16px;
     padding: 64px;
+    min-height: 797px;
+
+}
+
+.copyMobile{
+    display: none;
 }
 
 .newLetterBox-title{
@@ -52,7 +58,7 @@ input:focus
     background-color: $secundaryColor;
     font: normal normal bold 20px/32px Noto Sans;
     text-align: center;
-    width: 416px;
+    width: 100%;
     height: 64px;
     border: 1px solid $quaternaryColor;
     color: $whiteColor;
@@ -66,9 +72,7 @@ input:focus
 .limitsMenssage p{
     font: normal normal normal 16px/32px Noto Sans;
     color: $senaryColor;
-    bottom: 0;
-    position: absolute;
-
+    margin-top: 185px;
 }
 .newLetterBox-inputMenssagers{
     font: normal normal normal 12px/24px Noto Sans;
@@ -79,10 +83,10 @@ input:focus
 .message-success{
     @include displayFlex;
     justify-content: start;
+    margin-bottom: 16px;
     p{
         font: normal normal bold 16px/24px Noto Sans;
         margin-left: 16px;
-        margin-bottom: 16px;
     }
 }
 
@@ -110,6 +114,67 @@ input:focus
         font: normal normal normal 20px/20px Noto Sans;
         color: $senaryColor;
         padding: 0 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .newLetterBox-title{
+        font: normal normal normal 32px/48px Caveat Brush;
+
+    }
+    .newLetterBox-paragrath{
+        font: normal normal normal 16px/24px Noto Sans;
+
+    }
+    .inputEmail {
+        input{
+            font: normal normal normal 16px/20px Noto Sans;
+            margin-left: 16px;
+        }
+        img{
+            width:16px
+        }
+    }
+    .newLetterBox-box{
+        padding: 16px;
+        min-height: 100%;
+
+    }
+    .limitsMenssage p{
+        margin-top: 71px;
+        font: normal normal normal 16px/24px Noto Sans;
+    }
+    .newLetterBox-btn{
+        font: normal normal bold 16px/15px Noto Sans;
+    }
+    .copy-referral{
+        width: 100%;
+        height: 56px;
+        button{
+            display: none;
+        }
+    }
+    .message-success{
+        align-items: center;
+        display: flex;
+        img{
+            width: 24px;
+        }
+    }
+    .copyMobile{
+        @include displayFlex;
+        justify-content: center;
+        background-color: $secundaryColor;
+        border: 1px solid $quinaryColor;
+        width: 100%;
+        height: 56px;
+        font: normal normal bold 16px/15px Noto Sans;
+        color: $whiteColor;
+        border-radius: 8px;
+        margin-top: 16px;
+
     }
 
 }

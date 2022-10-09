@@ -1,6 +1,5 @@
-import React from 'react'
-import AppsLinks from '../components/appsLinks/AppsLinks'
-import NewLetterDiv from '../components/newLetter/NewLetterDiv'
+import AppsLinks from '../components/appsLinks/AppsLinks';
+import NewLetterDiv from '../components/newLetter/NewLetterDiv';
 
 const newletter = () => {
   return (
@@ -11,4 +10,4 @@ const newletter = () => {
   )
 }
 
-export default newletter
+export default newletter;

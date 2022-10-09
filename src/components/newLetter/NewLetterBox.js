@@ -5,15 +5,15 @@ const NewLetterBox = () => {
 
   const [emailInput, setEmailInput] = useState('');
   const [errorEmail, setErrorEmail] = useState('');
-  const [stage, setStage] = useState(1)
-  const [copyReferral,setCopyReferral] = useState('')
+  const [stage, setStage] = useState(1);
+  const [copyReferral,setCopyReferral] = useState('');
 
 
   function validateEmail(email) {
     const re = /\S+@\S+\.\S+/;
      if(re.test(email) == true){
       setErrorEmail('');
-      return true
+      return true;
      } else {
        setErrorEmail('Please Write The Email Correctly!');
       return false;
@@ -85,8 +85,9 @@ const NewLetterBox = () => {
           </div>
           <div className="copy-referral">
               <input ref={textAreaRef} value={copyReferral}/>
-              <button onClick={copyText}>Copy</button>           
+              <button onClick={copyText}>Copy</button>   
           </div>
+              <button className='copyMobile' onClick={copyText}>Copy URL</button>        
         </>
         }
         <div className="limitsMenssage">

@@ -1,7 +1,5 @@
-import React from 'react'
 import { Icon } from '@iconify/react';
-import './AppsLinks.css'
-import {Link} from 'react-router-dom'
+import './AppsLinks.css';
 
 const AppsLinks = () => {
   return (
@@ -29,11 +27,12 @@ const AppsLinks = () => {
             </div>
             <div className="app-links-stars">
                 <div className="app-start-icons">
-                    <Icon icon="bi:star-fill" />
-                    <Icon icon="bi:star-fill" />
-                    <Icon icon="bi:star-fill" />
-                    <Icon icon="bi:star-fill" />
-                    <Icon icon="bi:star-fill" />
+                    <Icon icon="bi:star-fill" style={{marginRight:'5px'}}/>
+                    <Icon icon="bi:star-fill" style={{marginRight:'5px'}}/>
+                    <Icon icon="bi:star-fill" style={{marginRight:'5px'}}/>
+                    <Icon icon="bi:star-fill" style={{marginRight:'5px'}}/>
+                    <Icon icon="bi:star-fill" style={{marginRight:'5px'}}/>
+
                 </div>
                 <p>Chrome Store reviews</p>
             </div>
@@ -42,4 +41,4 @@ const AppsLinks = () => {
   )
 }
 
-export default AppsLinks
+export default AppsLinks;

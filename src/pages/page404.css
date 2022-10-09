@@ -1,0 +1,13 @@
+.page404-div {
+  width: 100%;
+  border: 1px solid #434A54;
+  height: 80vh;
+  background-color: #F8CC5D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page404-div h1 {
+  font: normal normal normal 48px/72px Caveat Brush;
+}/*# sourceMappingURL=page404.css.map */

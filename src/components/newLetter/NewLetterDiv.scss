@@ -4,7 +4,7 @@
 
 .new-letter-div{
     width: 100%;
-    height: 925px;
+    min-height: 925px;
     background-color: $tertiaryColor;
     border: 1px solid $quinaryColor;
 }
@@ -13,3 +13,11 @@
     @include displayFlex;
 }
     
+@media only screen and (max-width: 1024px) {
+    .new-letter-container{
+        flex-direction: column;
+        padding-bottom: 48px;
+    }
+
+
+}

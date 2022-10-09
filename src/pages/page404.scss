@@ -1,0 +1,16 @@
+@import './../styles/colors';
+@import './../styles/mixins';
+
+.page404-div{
+    width: 100%;
+    border: 1px solid $quaternaryColor;
+    height: 80vh;
+    background-color: $tertiaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        font: normal normal normal 48px/72px Caveat Brush;        
+    }
+}

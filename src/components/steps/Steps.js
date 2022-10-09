@@ -1,5 +1,4 @@
-import React from 'react'
-import './steps.css'
+import './steps.css';
 
 const Steps = () => {
   return (
@@ -32,4 +31,4 @@ const Steps = () => {
   )
 }
 
-export default Steps
+export default Steps;

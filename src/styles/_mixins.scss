@@ -1,6 +1,10 @@
 @mixin container(){
     max-width: 1120px;
     margin: 0 auto;
+    @media (max-width: 1024px){
+        padding: 16px;
+
+    }
 }
 @mixin displayFlex {
     align-items: center;

@@ -34,4 +34,32 @@
   width: 144px;
   height: auto;
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .steps-item {
+    flex-direction: column;
+    width: 100%;
+  }
+  .step-text {
+    width: 100%;
+    text-align: center;
+  }
+  .step-text h2 {
+    margin: 0;
+    font: normal normal normal 32px/40px Caveat Brush;
+  }
+  .step-text h4 {
+    font: normal normal bold 16px/24px Gadugi;
+    margin: 16px;
+  }
+  .step-text p {
+    font: normal normal normal 16px/24px Noto Sans;
+  }
+  .step-img {
+    margin: 0;
+  }
+  .collect-coins-img {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=steps.css.map */

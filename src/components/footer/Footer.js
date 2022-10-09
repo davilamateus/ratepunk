@@ -10,8 +10,8 @@ const Footer = () => {
     const [pageActive, setPageActive ] = useState('');
     
     useEffect(()=>{
-        setPageActive(window.location.pathname.split('/')[1])
-    },[navigate])
+        setPageActive(window.location.pathname.split('/')[1]);
+    },[navigate]);
 
   return (
     <div className='footer-div'>
@@ -75,9 +75,12 @@ const Footer = () => {
 
                 </div>
             </div>
+
+            <p className="copyrightMobile">© 2021 Ratepunk. All Rights Reserved.</p>
+
         </div>
     </div>
   )
 }
 
-export default Footer
+export default Footer;

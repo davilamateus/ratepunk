@@ -1,11 +1,16 @@
 .newLetterBox-box {
-  width: 544px;
-  height: 797px;
+  width: 100%;
+  max-width: 544px;
   background-color: #F8F4F9;
   margin: 64px 0px;
   border: 1px solid #434A54;
   border-radius: 16px;
   padding: 64px;
+  min-height: 797px;
+}
+
+.copyMobile {
+  display: none;
 }
 
 .newLetterBox-title {
@@ -52,7 +57,7 @@ input:focus {
   background-color: #4EB3E3;
   font: normal normal bold 20px/32px Noto Sans;
   text-align: center;
-  width: 416px;
+  width: 100%;
   height: 64px;
   border: 1px solid #434A54;
   color: #fff;
@@ -68,8 +73,7 @@ input:focus {
 .limitsMenssage p {
   font: normal normal normal 16px/32px Noto Sans;
   color: #6D7A80;
-  bottom: 0;
-  position: absolute;
+  margin-top: 185px;
 }
 
 .newLetterBox-inputMenssagers {
@@ -84,11 +88,11 @@ input:focus {
   justify-content: space-between;
   display: flex;
   justify-content: start;
+  margin-bottom: 16px;
 }
 .message-success p {
   font: normal normal bold 16px/24px Noto Sans;
   margin-left: 16px;
-  margin-bottom: 16px;
 }
 
 .copy-referral {
@@ -117,4 +121,59 @@ input:focus {
   font: normal normal normal 20px/20px Noto Sans;
   color: #6D7A80;
   padding: 0 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .newLetterBox-title {
+    font: normal normal normal 32px/48px Caveat Brush;
+  }
+  .newLetterBox-paragrath {
+    font: normal normal normal 16px/24px Noto Sans;
+  }
+  .inputEmail input {
+    font: normal normal normal 16px/20px Noto Sans;
+    margin-left: 16px;
+  }
+  .inputEmail img {
+    width: 16px;
+  }
+  .newLetterBox-box {
+    padding: 16px;
+    min-height: 100%;
+  }
+  .limitsMenssage p {
+    margin-top: 71px;
+    font: normal normal normal 16px/24px Noto Sans;
+  }
+  .newLetterBox-btn {
+    font: normal normal bold 16px/15px Noto Sans;
+  }
+  .copy-referral {
+    width: 100%;
+    height: 56px;
+  }
+  .copy-referral button {
+    display: none;
+  }
+  .message-success {
+    align-items: center;
+    display: flex;
+  }
+  .message-success img {
+    width: 24px;
+  }
+  .copyMobile {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    background-color: #4EB3E3;
+    border: 1px solid #1F343E;
+    width: 100%;
+    height: 56px;
+    font: normal normal bold 16px/15px Noto Sans;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
 }/*# sourceMappingURL=NewLetterBox.css.map */

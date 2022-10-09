@@ -4,7 +4,7 @@
 }
 
 .app-links-container {
-  height: 144px;
+  min-height: 144px;
   max-width: 1120px;
   margin: 0 auto;
   align-items: center;
@@ -12,6 +12,11 @@
   display: flex;
   justify-content: start;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  .app-links-container {
+    padding: 16px;
+  }
 }
 
 .apps-links-stores {
@@ -53,4 +58,33 @@
 }
 .app-links-stars div {
   margin: 0 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app-links-container {
+    flex-direction: column;
+  }
+  .apps-links-stores {
+    flex-direction: column;
+  }
+  .apps-links-stores button {
+    margin-bottom: 16px;
+  }
+  .apps-links-stores button div p {
+    font: normal normal normal 16px/16px Noto Sans;
+    margin-bottom: 2px;
+  }
+  .apps-links-stores button div .app-link-name-store {
+    font: normal normal bold 20px/16px Noto Sans;
+  }
+  .app-links-stars {
+    justify-content: center;
+  }
+  .app-links-stars div svg {
+    width: 16px;
+  }
+  .app-links-stars p {
+    font: normal normal normal 16px/24px Noto Sans;
+    margin: 0;
+  }
 }/*# sourceMappingURL=AppsLinks.css.map */

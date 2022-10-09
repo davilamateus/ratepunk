@@ -39,3 +39,48 @@
     }
 
 
+.header-container-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-container{
+        display: none;
+    }
+    .header-container-mobile{
+        display: flex;
+        flex-direction: column;
+        background-color: $whiteColor;
+        width: 100%;
+        justify-content: space-between;
+        padding: 16px;
+        overflow: hidden;
+        height: 56px;
+        transition: 0.4s;
+        position: fixed;
+        border: 1px solid $quinaryColor;
+    }
+
+    .mobileTop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menuHamburguer{
+        cursor: pointer;
+    }
+
+    .menuMobile{
+        ul{
+            margin-top:24px;
+        }
+        ul li{
+            height: 40px;
+            margin-bottom: 8px;
+        }
+    }
+    .menuOpened{
+        height: 234px;
+    }
+
+}

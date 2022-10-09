@@ -6,6 +6,11 @@
   display: flex;
   height: 80px;
 }
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 16px;
+  }
+}
 
 .menu ul {
   display: flex;
@@ -25,4 +30,45 @@
 
 .menuActive a {
   color: #4EB3E3 !important;
+}
+
+.header-container-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-container {
+    display: none;
+  }
+  .header-container-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+    overflow: hidden;
+    height: 56px;
+    transition: 0.4s;
+    position: fixed;
+    border: 1px solid #1F343E;
+  }
+  .mobileTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menuHamburguer {
+    cursor: pointer;
+  }
+  .menuMobile ul {
+    margin-top: 24px;
+  }
+  .menuMobile ul li {
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .menuOpened {
+    height: 234px;
+  }
 }/*# sourceMappingURL=Header.css.map */

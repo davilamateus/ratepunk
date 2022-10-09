@@ -1,7 +1,6 @@
-import React from 'react'
-import Steps from '../steps/Steps'
-import NewLetterBox from './NewLetterBox'
-import './NewLetterDiv.css'
+import Steps from '../steps/Steps';
+import NewLetterBox from './NewLetterBox';
+import './NewLetterDiv.css';
 
 const NewLetterDiv = () => {
   return (
@@ -14,4 +13,4 @@ const NewLetterDiv = () => {
   )
 }
 
-export default NewLetterDiv
+export default NewLetterDiv;
