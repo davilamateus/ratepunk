@@ -1,0 +1,49 @@
+@import './../../styles/colors';
+@import './../../styles/mixins';
+
+
+.app-links-div{
+    background-color: $septenaryColor;
+    border: 1px solid $quinaryColor;
+}
+.app-links-container{
+    height: 144px;
+    @include container;
+    @include displayFlex;
+    justify-content: start;
+    align-items: center
+}
+.apps-links-stores{
+    @include displayFlex;
+}
+.app-links-button{
+    width: 312px;
+    height: 80px;
+    padding-left: 24px;
+    margin-right: 16px;
+    border: 1px solid $quinaryColor;
+    border-radius: 16px;
+    background: none;
+    cursor: pointer;
+    @include displayFlex;
+    justify-content: start;
+    color: $whiteColor;
+    font: normal normal normal 16px/16px Noto Sans;
+    text-align: left;
+    .app-link-button-text{
+        padding: 16px 0;
+        .app-link-name-store{
+            font: normal normal bold 20px/16px Gadugi;
+        }
+    }
+
+
+}
+.app-links-stars{
+    @include displayFlex;
+    color: $whiteColor;
+    font: normal normal normal 20px/24px Noto Sans;
+    div{
+        margin: 0 16px;
+    }
+}

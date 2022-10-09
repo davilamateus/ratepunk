@@ -1,0 +1,56 @@
+.app-links-div {
+  background-color: #45565E;
+  border: 1px solid #1F343E;
+}
+
+.app-links-container {
+  height: 144px;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.apps-links-stores {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.app-links-button {
+  width: 312px;
+  height: 80px;
+  padding-left: 24px;
+  margin-right: 16px;
+  border: 1px solid #1F343E;
+  border-radius: 16px;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  justify-content: start;
+  color: #fff;
+  font: normal normal normal 16px/16px Noto Sans;
+  text-align: left;
+}
+.app-links-button .app-link-button-text {
+  padding: 16px 0;
+}
+.app-links-button .app-link-button-text .app-link-name-store {
+  font: normal normal bold 20px/16px Gadugi;
+}
+
+.app-links-stars {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+  font: normal normal normal 20px/24px Noto Sans;
+}
+.app-links-stars div {
+  margin: 0 16px;
+}/*# sourceMappingURL=AppsLinks.css.map */

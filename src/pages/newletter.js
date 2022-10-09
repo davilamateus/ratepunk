@@ -1,11 +1,12 @@
 import React from 'react'
+import AppsLinks from '../components/appsLinks/AppsLinks'
 import NewLetterDiv from '../components/newLetter/NewLetterDiv'
 
 const newletter = () => {
   return (
     <>
         <NewLetterDiv/>
-        
+        <AppsLinks/>
     </>
   )
 }

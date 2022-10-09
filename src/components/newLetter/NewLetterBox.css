@@ -30,7 +30,7 @@
   height: 64px;
   display: flex;
   padding-left: 20px;
-  margin: 15px 0px;
+  margin-bottom: 15px;
 }
 
 .inputEmail img {
@@ -44,7 +44,7 @@
   border: none;
 }
 
-.inputEmail input:focus {
+input:focus {
   outline: none;
 }
 
@@ -57,6 +57,12 @@
   border: 1px solid #434A54;
   color: #fff;
   border-radius: 8px;
+  transition: 0.4s;
+}
+
+.newLetterBox-btn:hover, .copy-referral:hover {
+  box-shadow: 0 0.3rem 0.6rem rgba(31, 52, 62, 0.16);
+  transform: translate(0.2rem, -0.2rem);
 }
 
 .limitsMenssage p {
@@ -64,4 +70,51 @@
   color: #6D7A80;
   bottom: 0;
   position: absolute;
+}
+
+.newLetterBox-inputMenssagers {
+  font: normal normal normal 12px/24px Noto Sans;
+  color: #ED6F82;
+  margin-bottom: 7px;
+  height: 17px;
+}
+
+.message-success {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  justify-content: start;
+}
+.message-success p {
+  font: normal normal bold 16px/24px Noto Sans;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.copy-referral {
+  width: 416px;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #1F343E;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.copy-referral button {
+  background-color: #4EB3E3;
+  border: none;
+  width: 96px;
+  height: 64px;
+  font: normal normal bold 20px/24px Noto Sans;
+  color: #fff;
+}
+.copy-referral input {
+  height: 64px;
+  width: 352px;
+  font: normal normal normal 20px/20px Noto Sans;
+  color: #6D7A80;
+  padding: 0 20px;
 }/*# sourceMappingURL=NewLetterBox.css.map */

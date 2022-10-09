@@ -3,4 +3,19 @@
   margin: 0;
   box-sizing: border-box;
   font: normal normal normal 20px/32px Noto Sans;
+}
+
+a {
+  text-decoration: none;
+  font: normal normal normal 16px/24px Noto Sans;
+  color: #1F343E;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #4EB3E3;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

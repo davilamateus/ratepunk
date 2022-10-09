@@ -12,3 +12,15 @@
     width: $width;
     height: $height;
 }
+
+@mixin menuActive{
+    color: $secundaryColor!important;
+
+
+}
+
+@mixin btnHover {
+    box-shadow: 0 0.3rem 0.6rem rgb(31 52 62 / 16%);
+    transform: translate(0.2rem,-0.2rem);
+    
+}

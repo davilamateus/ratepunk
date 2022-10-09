@@ -1,8 +1,22 @@
-
+@import './colors';
 //Normalize
 *{
     padding: 0;
     margin: 0 ;
     box-sizing: border-box;
     font: normal normal normal 20px/32px Noto Sans;
+}
+a{
+    text-decoration: none;
+    font: normal normal normal 16px/24px Noto Sans;
+    color: $quinaryColor;
+    transition: 0.3s;
+}
+a:hover{
+    color: $secundaryColor;
+
+}
+
+li{
+    list-style: none;
 }

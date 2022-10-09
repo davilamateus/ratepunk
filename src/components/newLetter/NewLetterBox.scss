@@ -1,4 +1,5 @@
 @import './../../styles/colors';
+@import './../../styles/mixins';
 .newLetterBox-box{
     width: 544px;
     height: 797px;
@@ -31,7 +32,7 @@
     height: 64px;
     display: flex;
     padding-left:20px;
-    margin: 15px 0px;
+    margin-bottom: 15px;
 }
 .inputEmail img{
     width: 20px;
@@ -42,7 +43,7 @@
     margin-left: 20px;
     border: none;
 }
-.inputEmail input:focus
+input:focus
  {
     outline: none;
 }
@@ -56,7 +57,10 @@
     border: 1px solid $quaternaryColor;
     color: $whiteColor;
     border-radius: 8px;
-
+    transition: 0.4s;
+}
+.newLetterBox-btn:hover , .copy-referral:hover{
+    @include btnHover;
 }
 
 .limitsMenssage p{
@@ -64,5 +68,48 @@
     color: $senaryColor;
     bottom: 0;
     position: absolute;
+
+}
+.newLetterBox-inputMenssagers{
+    font: normal normal normal 12px/24px Noto Sans;
+    color: $errorColor;
+    margin-bottom: 7px;
+    height: 17px;
+}
+.message-success{
+    @include displayFlex;
+    justify-content: start;
+    p{
+        font: normal normal bold 16px/24px Noto Sans;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.copy-referral{
+    width: 416px;
+    height: 64px;
+    @include displayFlex;
+    background-color: $whiteColor;
+    border: 1px solid $quinaryColor ;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.4s;
+    button{
+        background-color: $secundaryColor;
+        border: none;
+        width: 96px;
+        height: 64px;
+        font: normal normal bold 20px/24px Noto Sans;
+        color: $whiteColor;
+
+    }
+    input{
+        height: 64px;
+        width: 352px;
+        font: normal normal normal 20px/20px Noto Sans;
+        color: $senaryColor;
+        padding: 0 20px;
+    }
 
 }

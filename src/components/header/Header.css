@@ -15,9 +15,12 @@
 }
 .menu ul li a {
   text-decoration: none;
-  color: #434A54;
   margin: 0 27px;
   font-weight: normal;
+  transition: 0.3s;
+}
+.menu ul li a:hover {
+  color: #4EB3E3;
 }
 
 .menuActive a {

@@ -8,7 +8,6 @@ const Header = () => {
     
     useEffect(()=>{
         setPageActive(window.location.pathname.split('/')[1])
-        console.log(pageActive)
     },[navigate])
 
 

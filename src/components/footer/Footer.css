@@ -1,0 +1,83 @@
+.footer-div {
+  background-color: #F8F4F9;
+}
+
+.footer-container {
+  padding-top: 64px;
+  padding-bottom: 58px;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+.footer-container h3 {
+  font: normal normal bold 20px/24px Noto Sans;
+  letter-spacing: 1.6px;
+}
+
+.footer-about {
+  max-width: 544px;
+}
+.footer-about p {
+  font: normal normal normal 16px/24px Noto Sans;
+  color: #1F343E;
+  margin-top: 32px;
+}
+.footer-about .copyright {
+  font: normal normal normal 16px/24px Noto Sans;
+  color: #6D7A80;
+}
+
+.footer-quick-links nav {
+  padding-top: 24px;
+}
+.footer-quick-links nav a {
+  padding-bottom: 16px;
+}
+
+.menuActive {
+  color: #4EB3E3 !important;
+}
+
+.footer-contact {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  min-height: 226px;
+}
+
+.contact-email div {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.contact-email div p {
+  margin-left: 16px;
+  font: normal normal normal 16px/24px Noto Sans;
+}
+
+.contact-social div {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.contact-social div a {
+  margin-top: 24px;
+  margin-right: 8px;
+  background-color: #4EB3E3;
+  border: 1px solid #1F343E;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contact-social div a:hover {
+  background-color: #F8CC5D;
+}/*# sourceMappingURL=Footer.css.map */

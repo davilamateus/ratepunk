@@ -22,18 +22,20 @@
   
     ul li a{
         text-decoration: none;
-        color: $quaternaryColor;
         margin: 0 27px;
         font-weight: normal;
-
+        transition: 0.3s;
+    }
+    ul li a:hover{
+        color: $secundaryColor;
     }
     }
 
-.menuActive{
-    a{
-        color: $secundaryColor!important;
-    }
 
-}
+    .menuActive
+        a{
+            @include menuActive;
+    
+    }
 
 
